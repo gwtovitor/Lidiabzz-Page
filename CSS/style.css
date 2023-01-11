@@ -1,0 +1,237 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#menu li a{
+    text-decoration: none;
+    color: black;
+}
+#menu a:hover{
+    background-color: rgba(0, 0, 0, .05);
+}
+#logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#divmenu{
+    width: 20rem;
+    height: 100vh;
+    background-color: rgba(255, 255, 255);
+    position: absolute;
+    top: 0;     
+    z-index: 9000;
+    left: -20rem;
+    transition: all 1s;
+    
+}
+#divmenu.active {
+    display: flex;
+    left: 0rem;
+    transition: all 1s;
+}
+#btn.active {
+    left: 15rem;
+}
+#nav{
+    list-style: none;
+    margin-top: 7rem;   
+  
+}
+#nav li{
+    margin-bottom: 5rem;
+    text-align: center;
+    object-fit:cover;
+   
+}  
+
+
+#divmenu a{
+    display: block;
+    width: 20rem;
+    margin-top: 0%;
+    margin-bottom: 1px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Prata', serif;
+    text-decoration:none;
+    color: black;
+    background-color: rgba(0, 0, 0, .05); 
+}
+
+#divmenu a:hover{
+    background-color: rgba(0, 0, 0, .1);
+}
+#btn{
+    display: block;
+    position: fixed;
+    z-index: 9001;
+    display: flex;
+    border: none;
+    opacity: .5;
+    left: 1rem;
+    top: 1rem;
+    transition: all 1s;
+    
+}
+#btn:hover{
+    cursor: pointer;
+    opacity: 1;
+  
+}
+#btn img{
+    width: 5rem;
+    
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+}
+
+.imgwrapper{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.imgwrapper img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+        animation: zoom 25s;
+}
+
+.banner{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+.banner h1{
+    
+    color: #fffdd9;
+    font-family: 'Prata', serif;
+    font-size: 5rem;    
+    letter-spacing: 4px;
+    text-shadow: black .1em .1em 1em;
+    text-transform: uppercase;
+    animation: movbanner 15s;
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    white-space: nowrap;
+}
+#wpp a{
+    position:absolute;
+    animation: wpp 15s;
+    right: 2rem;
+    bottom: 2rem;
+}
+#wpp2{
+    width: 5rem;
+}
+
+footer{
+ 
+    position: absolute;
+    bottom: .5rem;
+    width: 100%;
+    height: 1rem;
+}
+
+#footertext{
+    text-align: left;
+    padding-left: 4rem;
+    color: black;
+}
+footer span{
+    font-weight: bold;
+    color: black;
+}
+@keyframes wpp {
+    0% {
+        opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+@keyframes zoom {
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+@keyframes movbanner {
+    0%{
+        opacity: 0;
+    }
+    100%{
+
+        opacity: 1;
+    }
+    
+}
+
+@media (max-device-width: 1300px){
+    .container h1{
+        color: white;
+        position: absolute;
+        top: 10rem;
+        left: 20%;
+        text-align: center;
+        font-size: 300%;
+        letter-spacing: 4px;
+        text-shadow: black .1em .1em 1em;
+    }
+    #btn img{
+        width:3rem;
+}    
+#nav li{
+    margin-bottom: 4rem;
+    background-color: rgba(0, 0, 0, .05);
+}
+
+}
+@media (max-device-width: 750px){
+    .container h1{
+        color: white;
+        position: absolute;
+        top: 10rem;
+        left: 20%;
+        text-align: center;
+        font-size: 200%;
+        letter-spacing: 4px;
+        text-shadow: black .1em .1em 1em;
+    }
+    #btn img{
+        width:3rem;
+}  
+#nav li{
+    margin-bottom: 3rem;
+    background-color: rgba(0, 0, 0, .05);
+}
+}
+@media (max-device-width: 500px){
+    .container h1{
+        color: white;
+        position: absolute;
+       top: 15%;
+       left: 20%;
+        text-align: center;
+        font-size: 200%;
+        letter-spacing: 4px;
+        text-shadow: black .1em .1em 1em;
+    }
+    #btn img{
+        width:3rem;
+}  
+#nav li{
+    margin-bottom: 3rem;
+    background-color: rgba(0, 0, 0, .05);
+}
+}
